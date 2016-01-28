@@ -11,6 +11,7 @@ If we fix the symbol 'a' at the first position. That is, the symbol with index i
 If we fix the symbol 'b' at the first position, we will have 362880 permutations (of the preceding permutations that started with 'a')
 plus 362880 permutations that start with 'b' (a..., ... a..., b..., ...., b...) which is 2*362880=725760 and less than what we want. 
 That is, the words that start with 'b' are in the range [362881, 725760] which doesn't include k=1000000.
+```
   ab..., ..., ac...,  ba..., ..., bc...
  |________________|   |________________|
          |                     |
@@ -19,7 +20,7 @@ That is, the words that start with 'b' are in the range [362881, 725760] which d
                     |
                   725760					
 
-
+```
 If we fix the symbol with index i=2 ('c') we will have a total of number of 3*362880 = 1088640 (a..., b..., c....) which includes k = 1000000. 
 In other words, the words that start with 'c' are in the range [725761, 1088640] which includes k=1000000.
 
