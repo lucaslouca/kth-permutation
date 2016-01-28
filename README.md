@@ -23,7 +23,7 @@ That is, the words that start with 'b' are in the range [362881, 725760] which d
 ```
 If we fix the symbol with index i=2 ('c') we will have a total of number of 3*362880 = 1088640 (a..., b..., c....) which includes k = 1000000. 
 In other words, the words that start with 'c' are in the range [725761, 1088640] which includes k=1000000.
-
+```
   ab..., ..., ac...,  ba..., ..., bc...,   ca..., ..., cb...
  |________________|   |________________|  |________________|
          |                     |                   |
@@ -32,7 +32,7 @@ In other words, the words that start with 'c' are in the range [725761, 1088640]
                                |
                             1088640	
 				  
-
+```
 Obviously if we fix the symbol with index 3, that is, the symbol 'd', the range of the words starting with symbol 'd' will be
 [1088641, 1451520] which does not include k=1000000.
 
