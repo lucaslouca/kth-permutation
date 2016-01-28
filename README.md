@@ -44,5 +44,5 @@ Example:
 
 Let `k = 1000000`. Then `1000000 = 2*(9!) + 274240`. That is the first symbol is the symbol with index `2` in `S`, which is `'c'`. Append `'c'` to the result. Then, remove `'c'` from `S` because we have used this symbol, so `S` becomes `[a,b,d,e,f,g,h,i,j]` and `n = 9`. For the next step, `k` becomes the rest `274240` because we now want to find the `274240`th permutation in the `2`nd block (permutations that start with `'c'`). That is, `k = 1000000 % 9! = 274240`.
 
-The next symbol index is `i = Math.floor(274240/(8!)) = 6` which is `'h'` (remember we have one symbol less in the `S` that is why `(n-1)! = 8 !`). Append `'h'` to the result. `k` becomes `32320`. Remove `'h'` from `S` so that `S` becomes `[a,b,d,e,f,g,i,j]` with `n = 8`.
-Repeat these steps until `n = 0`.
+The next symbol index is `i = Math.floor(274240/(8!)) = 6` which is `'h'` (remember we have one symbol less in the `S` that is why `(n-1)! = 8 !`). Append `'h'` to the result. Remove `'h'` from `S` so that `S` becomes `[a,b,d,e,f,g,i,j]` with `n = 8`.
+Repeat these steps until `n = 0`. `k` becomes `32320`. 
