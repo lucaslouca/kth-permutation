@@ -54,6 +54,7 @@ public class PermutationSequence {
 
 	public static void main(String[] args) {
 
+		// add chars a - j
 		int n = 10;
 		char[] s = new char[n];
 		for (int c = 97; c < 97 + n; c++) {
