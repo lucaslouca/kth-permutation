@@ -1,6 +1,6 @@
 # Finding n-th permutation without computing others
 
-Given S of size n and k, return the kth lexicographic permutation sequence. (Note: Given n will be between 1 and 10 inclusive.)
+Given `S` of size n and k, return the kth lexicographic permutation sequence. (Note: Given n will be between 1 and 10 inclusive.)
 
 For n=10 variable symbols we have 10! possible permutations. The first step is to find the first symbol.
 If we fix a first symbol, then the remaining 9 symbols will have 9! possible permutations. Let i be the index of the 
