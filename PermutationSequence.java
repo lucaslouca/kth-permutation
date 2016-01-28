@@ -53,7 +53,14 @@ public class PermutationSequence {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(solve(new char[] { 'a', 'b', 'c' }, 4));
+
+		int n = 10;
+		char[] s = new char[n];
+		for (int c = 97; c < 97 + n; c++) {
+			s[c - 97] = (char) c;
+		}
+
+		System.out.println(solve(s, 1088640));
 	}
 
 }
