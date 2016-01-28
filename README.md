@@ -10,18 +10,18 @@ If we fix the symbol `'a'` at the first position. That is, the symbol with index
 
 If we fix the symbol `'b'` at the first position, we will have `362880` permutations (of the preceding permutations that started with `'a'`)
 plus `362880` permutations that start with `'b'` (`a..., ... a..., b..., ...., b...`) which is `2*362880=725760` and less than what we want. 
-That is, the words that start with `'b'` are in the range `[362881, 725760]` which doesn't include `k=1000000`:
+That is, the words that start with `'b'` are in the range `[362880, 725759]` which doesn't include `k=1000000`:
 ```
   ab..., ..., ac...,  ba..., ..., bc...
  |________________|   |________________|
          |                     |
-      362880                362880 (indices 362881 - 725760)
+ 362880 (0-362879)        362880 (indices 362880 - 725759)
  |_____________________________________|
                     |
                   725760					
 
 ```
-If we fix the symbol with index `i = 2` (`'c'`) we will have a total number of `3*362880 = 1088640` permutations (`a..., b..., c....`) which includes `k = 1000000`. In other words, the words that start with `'c'` are in the range `[725761, 1088640]` which includes `k=1000000`:
+If we fix the symbol with index `i = 2` (`'c'`) we will have a total number of `3*362880 = 1088640` permutations (`a..., b..., c....`) which includes `k = 1000000`. In other words, the words that start with `'c'` are in the range `[725760, 1088639]` which includes `k=1000000`:
 ```
   ab..., ..., ac...,  ba..., ..., bc...,   ca..., ..., cb...
  |________________|   |________________|  |________________|
@@ -33,7 +33,7 @@ If we fix the symbol with index `i = 2` (`'c'`) we will have a total number of `
 				  
 ```
 Obviously if we fix the symbol with index `i = 3`, that is, the symbol `'d'`, the range of the words starting with symbol `'d'` will be
-`[1088641, 1451520]` which does not include `k=1000000`.
+`[1088640, 1451519]` which does not include `k=1000000`.
 
 The *block* in which `k` is located or the index `i` of the symbol with which the `k`th permutation starts is:
 ```
