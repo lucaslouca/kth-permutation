@@ -40,7 +40,7 @@ The *block* in which `k` is located or the index `i` of the symbol with which th
 i = Math.floor(k/((n-1)!))` and `r = k % (n-1)!
 ```
 
-Example:
+**Example:**
 
 Let `k = 1000000`. Then `1000000 = 2*(9!) + 274240`. That is the first symbol is the symbol with index `2` in `S`, which is `'c'`. Append `'c'` to the result. Then, remove `'c'` from `S` because we have used this symbol, so `S` becomes `[a,b,d,e,f,g,h,i,j]` and `n = 9`. For the next step, `k` becomes the rest `274240` because we now want to find the `274240`th permutation in the `2`nd block (permutations that start with `'c'`). That is, `k = 1000000 % 9! = 274240`.
 
