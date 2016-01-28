@@ -37,7 +37,7 @@ Obviously if we fix the symbol with index `i = 3`, that is, the symbol `'d'`, th
 
 The *block* in which `k` is located or the index `i` of the symbol with which the `k`th permutation starts is:
 ```
-i = Math.floor(k/((n-1)!))` and `r = k % (n-1)!
+i = Math.floor(k/((n-1)!))` and r = k % (n-1)!
 ```
 
 **Example:**
