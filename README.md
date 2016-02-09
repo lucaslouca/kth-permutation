@@ -8,7 +8,7 @@ For `n = 10` variable symbols we have `10!` possible permutations. The first ste
 If we fix a first symbol, then the remaining `9` symbols will have `9!` possible permutations. Let `i` be the index (in S) of the 
 first fixed symbol. Then `k = i*((n-1)!) + r`. We want to find `i`, so that `i*((n-1)!)` is the largest possible number less than or equal to `k`. Why? Consider the following:
 
-If we fix the symbol `'a'` at the first position. That is, the symbol with index `i = 0` in `S` we will then have `(n-1)! = 9!` possible combinations. Which is `362880` and less from what we want. 
+Let `k=1000000`. If we fix the symbol `'a'` at the first position. That is, the symbol with index `i = 0` in `S` we will then have `(n-1)! = 9!` possible combinations. Which is `362880` and less from what we want. 
 
 If we fix the symbol `'b'` at the first position, we will have `362880` permutations (of the preceding permutations that started with `'a'`)
 plus `362880` permutations that start with `'b'` (`a..., ... a..., b..., ...., b...`) which is `2*362880=725760` and less than what we want. 
