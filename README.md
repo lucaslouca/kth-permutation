@@ -15,22 +15,34 @@ plus `362880` permutations that start with `'b'` (`a..., ... a..., b..., ...., b
 That is, the words that start with `'b'` are in the range `[362880, 725759]` which doesn't include `k=1000000`:
 ```
   ab..., ..., ac...,  ba..., ..., bc...
+  
  |________________|   |________________|
+ 
          |                     |
+	 
  362880 (0-362879)        362880 (permutation 362880 - 725759)
+ 
  |_____________________________________|
+ 
                     |
+		    
                   725760					
 
 ```
 If we fix the symbol with index `i = 2` (`'c'`) we will have a total number of `3*362880 = 1088640` permutations (`a..., b..., c....`) which includes `k = 1000000`. In other words, the words that start with `'c'` are in the range `[725760, 1088639]` which includes `k=1000000`:
 ```
   ab..., ..., ac...,  ba..., ..., bc...,   ca..., ..., cb...
+  
  |________________|   |________________|  |________________|
+ 
          |                     |                   |
+	 
        362880                362880              362880
+       
  |_________________________________________________________|
+ 
                                |
+			       
                             1088640	
 				  
 ```
