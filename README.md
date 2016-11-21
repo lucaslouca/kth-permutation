@@ -1,7 +1,5 @@
 # Finding n-th permutation without computing others
 
-
-
 Given `S` of size `n` and `k`, return the `k`th lexicographic permutation sequence. (Note: Given `n` will be between `1` and `10` inclusive.)
 
 For `n = 10` variable symbols we have `10!` possible permutations. The first step is to find the first symbol.
